@@ -1,5 +1,6 @@
 *{
-  margin: 0;
+  margin: 0 ;
+  overflow-x:hidden ;/*Remove a barra de rolagem de baixo*/
   padding: 0;
   box-sizing: border-box;
   font-family:"Roboto", sans-serif ;
@@ -31,15 +32,182 @@ nav ul li a{
   transition: .7s ease, text-decoration 0.3s ease, text-underline-offset 0.3s ease;
 }
 
-a:hover{
+/* a:hover{
+  
   text-decoration: underline;
   text-decoration-thickness: 0.1em;
   text-underline-offset: 0.3em; /*espaço entre a letra e o sublinhado*/
   
+  nav ul li a:hover {
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.3em; /*espaço entre a letra e o sublinhado*/
+    color: #a28a77;
+    text-decoration: underline; /*arrumar meu hover algum dia*/
+  }
+  
+
+.banner{
+  background:url(https://roses-garden-spa.vercel.app/imagens/banner.jpeg) 27% center no-repeat;
+  width: 100vw;
+  min-height: 350px;
+  background-size: cover;
+  opacity: .9;
+  
 }
 
-#banner{
- 
-background: url(img/image.jpg) 27% center no-repeat;
+#main{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F7D7;
+  width: 100vw;
+  height: 600px;
+}
 
+#main h1{
+ font-family: 'Roboto' sans-serif;
+ color: #D8A98F;
+ font-size: 1.5rem;
+ margin-bottom: 10px;
+ 
+}
+
+#main h2{
+font-family: 'Roboto' sans-serif;
+font-weight: 400;
+font-size: 2.5rem;
+margin-bottom: 40px;
+}
+
+.cards{
+
+  display: flex;
+}
+
+.card{
+  padding: 10px;
+  width: 360px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.card img{
+ width: 320px;
+ border-radius: 5px;
+ border: 3px solid #7D5A50;
+}
+
+.card h2{
+  margin-top: 20px;
+  color: #BF9270;
+}
+
+.card p {
+  color: #BF9270;
+  font-size: 1rem;
+}
+
+#cta{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 250px;
+  background-color: #FFEDDB;
+ 
+}
+
+#cta h2{
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: 'Roboto' sans-serif;
+  color: #BF9270;
+}
+
+.inputs{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+#text{
+width: 450px;
+height: 50px;
+
+margin-bottom: 15px;
+border: none;
+border-radius: 10px;
+}
+
+#button{
+  width: 120px;
+border: none;
+padding: 10px;
+color:black ;
+background-color: #7F5C52;
+border-radius: 10px;
+}
+
+#oferta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+  background-color: #F6F7D7;
+}
+section div img{
+  width: 550px;
+  border-radius: 10px;
+  border-top: 20px;
+}
+
+.oferta-descricao{
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oferta-descricao h3{
+font-size: 22px;
+color: #D8A99F;
+font-weight: 300;
+font-family: 'Roboto' sans-serif;
+}
+
+.oferta-descricao h4{
+font-size: 40px;
+font-family: 'Roboto' sans-serif;
+font-weight: 300;
+color: #af8980;
+}
+
+.oferta-descricao p{
+color: #D8A99F;
+}
+
+footer{
+  background: #D2A488;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+footer h1{
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family:'Roboto' sans-serif ;
+  font-weight: 400;
 }
